@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide In Hover Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="main-content">
+            <img src="https://images.unsplash.com/photo-1633285718597-b6b1a0495035?w=1586&q=80" alt="">
+        </div>
+        <div class="overlay-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi in, repellendus et illo nam provident alias maiores obcaecati quas ducimus, omnis, suscipit neque reiciendis placeat. Tempora libero id error laudantium.
+                <span>Dark Knight</span>
+            </p>
+            <!-- <span>Dark Knight</span> -->
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelector('.card');
+        card.addEventListener("click", function() {
+            card.classList.toggle('slide-in');
+        })
+    </script>
+</body>
+</html>
